@@ -206,6 +206,9 @@ def _build(argv, config, versions, current_name, is_root):
     if config.overflow:
         argv += config.overflow
 
+    os.environ['SPHINX_VERSIONS_BRANCH'] = current_name
+    os.environ['SPHINX_VERSIONS_ROOT_DIR'] = "" if is_root else "../"
+
     # Build.
     result = build_main(argv)
 
