@@ -8,7 +8,7 @@ verify_ssl = true
 [packages]
 click = "*"
 colorclass = "*"
-sphinx = "==1.8.5"
+sphinx = ">=1.8.5"
 sphinx_rtd_theme = "*"
 typing = {markers = "python_version >= '3.0' and python_version < '3.5'",version = "*"}
 
